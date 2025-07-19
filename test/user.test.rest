@@ -1,0 +1,56 @@
+GET http://localhost:3001/user
+
+###
+
+GET  http://localhost:3001/user/6f1cada4201e14eaa4f3e33
+Content-Type: application/json
+
+###
+
+POST http://localhost:3001/user
+Content-Type: application/json
+Authorization: "Bearer eroefmlekoperi943289tr904th"
+
+{
+    "name": "willy atabong",
+    "email": "atabongw@gmail.com",
+    "mobile": "+237680019744",
+    "password": "9909667"
+}
+
+###
+
+PATCH  http://localhost:3001/user/68139cc79624e8b0212438bd
+Authorization: "Bearer eroefmlekoperi943289tr904th"
+Content-Type: application/json
+
+{
+    "emailVerifiedAt": "2025-05-11T16:09:43.289Z"
+}
+
+###
+
+DELETE  http://localhost:3001/user/67f1cada4201e14eaa4f3e33
+
+###
+
+GET  http://localhost:3001/secret
+Content-Type: application/json
+Authorization: "Bearer eroefmlekoperi943289tr904th"
+
+{
+    "name": "agating day"
+}
+
+######
+GET  http://localhost:3001/diffusion/7698g97y8ujhghjg/789y988
+
+{
+    "name": "agating day"
+}
+######
+POST   http://localhost:3001/diffusion/create
+Content-Type: application/json
+######
+GET   http://localhost:3001/diffusion/join-room/681a9955012ccefa0dde776b
+Content-Type: application/json
